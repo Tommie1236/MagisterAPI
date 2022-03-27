@@ -4,9 +4,9 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-SCHOOL_NAME = "passie" #School name 
-STUDENT_NUMBER = "36006" #Student number
-USER_PASSWORD = "MS3548to" #Magister password 
+SCHOOL_NAME = "your school" #School name 
+STUDENT_NUMBER = "your number" #Student number
+USER_PASSWORD = "your password" #Magister password 
 
 driver = webdriver.Chrome()  # Optional argument, if not specified will search path.
 driver.get("https://www.google.com")

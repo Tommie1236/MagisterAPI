@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-def init(school_name, student_number, user_password):
+def InitApi(school_name, student_number, user_password):
     driver = webdriver.Chrome() #Optional argument, if not specified will search path.
     driver.get("https://www.google.com")
 
@@ -35,5 +35,6 @@ def init(school_name, student_number, user_password):
     password.submit()
     
     print("succesfully logged into magister.net using "+school_name+", "+str(student_number)+", "+user_password)
+    time.sleep(15)
 
-init("passie",36006,"MS3548to")
+InitApi("passie",36006,"MS3548to")
