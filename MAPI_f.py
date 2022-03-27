@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-def InitApi(school_name, student_number, user_password):
+def InitApi(link_to_your_magister, student_number, user_password):
     driver = webdriver.Chrome() #Optional argument, if not specified will search path.
     driver.get("https://www.google.com")
 
@@ -14,13 +14,7 @@ def InitApi(school_name, student_number, user_password):
     except:
         print("no google tos :)")
 
-    driver.get("https://accounts.magister.net")
-
-    time.sleep(1) #decreases the chance of failing
-
-    school = driver.find_element(By.ID, "scholenkiezer_value")
-    school.send_keys(school_name)
-    school.submit()
+    driver.get(link_to_your_magister)
 
     time.sleep(1) #decreases the chance of failing
 
@@ -34,7 +28,12 @@ def InitApi(school_name, student_number, user_password):
     password.send_keys(user_password)
     password.submit()
     
-    print("succesfully logged into magister.net using "+school_name+", "+str(student_number)+", "+user_password)
-    time.sleep(15)
+    print("succesfully logged into", link_to_your_magister +"using"+str(student_number)+", "+user_password)
+    
+    while True:
+        time.sleep(1)
 
-InitApi("your school",your_number,"your password")
+def QuitApi():
+    driver.quit()
+
+#InitApi("link_to_your_magister",your_number,"your password")
