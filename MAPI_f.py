@@ -37,4 +37,4 @@ def InitApi(school_name, student_number, user_password):
     print("succesfully logged into magister.net using "+school_name+", "+str(student_number)+", "+user_password)
     time.sleep(15)
 
-InitApi("your school",your number,"your password")
+InitApi("your school",your_number,"your password")
