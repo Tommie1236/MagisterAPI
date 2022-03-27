@@ -15,4 +15,4 @@ You can download selenium using `pip install selenium` or `pip3 install selenium
 
 #### chromedriver
 install chromedriver from [this site](https://chromedriver.chromium.org/getting-started)
-not much to say about it, for me it was already intalled with cromium (ubuntu) and i can't find an clear instuction somewhere on how to do it
+not much to say about it, for me it was already intalled with chromium (ubuntu) and i can't find an clear instuction somewhere on how to do it
