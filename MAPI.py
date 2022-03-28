@@ -37,14 +37,21 @@ print(f"succesfully logged into {SCHOOL_LINK} using {str(STUDENT_NUMBER)}, {USER
 time.sleep(5)
 
 driver.get(SCHOOL_LINK+"/magister/#/agenda")
+if not driver.current_url == SCHOOL_LINK+"/magister/#/agenda":
+    driver.get(SCHOOL_LINK+"/magister/#/agenda") # make sure it is in the correct agenda
+    print("reloaded agenda")
+else:
+    print("agenda was correct first time")
 
-time.sleep(10)
+time.sleep(10) #this needs a lot of time to load all the data
 
-agenda = driver.find_element(By.XPATH, '//*[@id="afsprakenLijst"]/div[2]/table/tbody/tr[2]/td[3]/span/span[2]')
+agenda_time = driver.find_element(By.XPATH, '//*[@id="afsprakenLijst"]/div[2]/table/tbody/tr[2]/td[2]/span/span')
+agenda_course = driver.find_element(By.XPATH, '//*[@id="afsprakenLijst"]/div[2]/table/tbody/tr[2]/td[3]/span/span[2]')
+agenda_location = driver.find_element(By.XPATH, '//*[@id="afsprakenLijst"]/div[2]/table/tbody/tr[2]/td[3]/span/span[3]')
+agenda_info = [agenda_time.text, agenda_course.text, agenda_location.text]
+print(agenda_info)
 
-print(agenda.text)
-
-x = input("quit? ")
+x = input("quit? y? ")
 x.lower()
 if x == "y" or "yes":
     driver.quit()
