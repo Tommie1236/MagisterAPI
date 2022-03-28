@@ -4,7 +4,7 @@ A simple API I wrote to interface with magister.
 For this API to work you will need some things:
 - Python 3
 - Selenium
-- An driver
+- An browser driver
 
 #### Python
 I will not go over the install of python, I assume you have python already if you are going to use this.
