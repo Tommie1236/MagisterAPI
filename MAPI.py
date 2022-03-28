@@ -4,33 +4,33 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-SCHOOL_NAME = "your school" #School name 
-STUDENT_NUMBER = "your number" #Student number
-USER_PASSWORD = "your password" #Magister password 
+SCHOOL_LINK = "" #link to your magister
+STUDENT_NUMBER = "" #Student number
+USER_PASSWORD = "" #Magister password 
 
-driver = webdriver.Chrome()  # Optional argument, if not specified will search path.
-driver.get("https://www.google.com")
+driver = webdriver.Chrome() #Optional argument, if not specified will search path.
 
-try: 
-    driver.find_element(By.XPATH, '//*[@id="L2AGLb"]').click()
-    print("google tos passed")
-except:
-    print("no google tos :)")
+driver.get(SCHOOL_LINK)
 
-driver.get("https://accounts.magister.net")
-
-school = driver.find_element(By.ID, "scholenkiezer_value")
-school.send_keys(SCHOOL_NAME)
-school.submit()
+time.sleep(1) #decreases the chance of failing
 
 student = driver.find_element(By.ID, "username")
 student.send_keys(STUDENT_NUMBER)
 student.submit()
 
+time.sleep(1) #decreases the chance of failing
+
 password = driver.find_element(By.ID, "password")
 password.send_keys(USER_PASSWORD)
 password.submit()
+ 
+print(f"succesfully logged into {SCHOOL_LINK} using {str(STUDENT_NUMBER)}, {USER_PASSWORD}")
 
-time.sleep(15) 
+time.sleep(5)
 
-driver.quit()
+driver.get(SCHOOL_LINK+"/magister/#/agenda")
+
+x = input("quit? ")
+x.lower()
+if x == "y" or "yes":
+    driver.quit()

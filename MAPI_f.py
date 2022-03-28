@@ -2,9 +2,10 @@
 #just a simple magister api
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+import asyncio
 import time
 
-def InitApi(link_to_your_magister, student_number, user_password):
+async def InitApi(link_to_your_magister, student_number, user_password):
     driver = webdriver.Chrome() #Optional argument, if not specified will search path.
     driver.get("https://www.google.com")
 
@@ -33,7 +34,7 @@ def InitApi(link_to_your_magister, student_number, user_password):
     while True:
         time.sleep(1)
 
-def QuitApi():
+async def QuitApi():
     driver.quit()
 
-#InitApi("link_to_your_magister",your_number,"your password")
+# InitApi("link to your magister.net",student_number,"password")
