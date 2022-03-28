@@ -1,18 +1,23 @@
 # MagisterAPI
-a simple api i wrote to interface with magister
+A simple api I wrote to interface with magister.
 
-for this api to work you will need some things
+For this api to work you will need some things:
 - python3
-- selenium
-- chromedriver
+- Selenium
+- an driver
 
-#### python
-i will not go over the install of python, i assume you have python already if you are going to use this
+#### Python
+I will not go over the install of python, I assume you have python already if you are going to use this.
 
-#### selenium
-selenium is a piece of software to automate and interface with browsers.  
-You can download selenium using `pip install selenium` or `pip3 install selenium`
+#### Selenium
+Selenium is a piece of software to automate and interface with browsers.  
+You can download selenium using `pip install selenium` or `pip3 install selenium`.
 
-#### chromedriver
-install chromedriver from [this site](https://chromedriver.chromium.org/getting-started)
-not much to say about it, for me it was already intalled with chromium (ubuntu) and i can't find an clear instuction somewhere on how to do it
+#### Drivers
+Selenium requires a driver to interface with the chosen browser. Make sure it’s in your PATH, e. g., place it in `/usr/bin` or `/usr/local/bin`.
+Links to some of the more popular browser drivers:
+
+* Chrome: 	https://sites.google.com/chromium.org/driver/
+* Edge: 	https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+* Firefox: 	https://github.com/mozilla/geckodriver/releases
+* Safari: 	https://webkit.org/blog/6900/webdriver-support-in-safari-10/
