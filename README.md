@@ -2,9 +2,9 @@
 A simple api I wrote to interface with magister.
 
 For this api to work you will need some things:
-- python3
+- Python 3
 - Selenium
-- an driver
+- An driver
 
 #### Python
 I will not go over the install of python, I assume you have python already if you are going to use this.
