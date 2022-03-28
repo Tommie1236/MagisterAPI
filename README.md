@@ -14,7 +14,7 @@ Selenium is a piece of software to automate and interface with browsers.
 You can download selenium using `pip install selenium` or `pip3 install selenium`.
 
 #### Drivers
-Selenium requires a driver to interface with the chosen browser. Make sure it’s in your PATH, e. g., place it in `/usr/bin` or `/usr/local/bin`.
+Selenium requires a driver to interface with the chosen browser. Make sure it’s in your PATH, e. g., place it in `/usr/bin` or `/usr/local/bin` on linux.
 Links to some of the more popular browser drivers:
 
 * Chrome: 	https://sites.google.com/chromium.org/driver/
