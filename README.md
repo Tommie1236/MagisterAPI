@@ -1,7 +1,7 @@
 # MagisterAPI
-A simple api I wrote to interface with magister.
+A simple API I wrote to interface with magister.
 
-For this api to work you will need some things:
+For this API to work you will need some things:
 - Python 3
 - Selenium
 - An driver
