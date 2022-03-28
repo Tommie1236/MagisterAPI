@@ -8,7 +8,11 @@ SCHOOL_LINK = "" #link to your magister
 STUDENT_NUMBER = "" #Student number
 USER_PASSWORD = "" #Magister password 
 
+#Uncomment the browser you want to use:
 driver = webdriver.Chrome() #Optional argument, if not specified will search path.
+#driver = webdriver.Firefox()
+#driver = webdriver.Edge()
+#driver = webdriver.Safari()
 
 driver.get(SCHOOL_LINK)
 

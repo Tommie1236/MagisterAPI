@@ -6,18 +6,12 @@ import asyncio
 import time
 
 async def InitApi(link_to_your_magister, student_number, user_password):
-    driver = webdriver.Chrome() #Optional argument, if not specified will search path.
+
     #Uncomment the browser you want to use:
+    driver = webdriver.Chrome() #Optional argument, if not specified will search path.
     #driver = webdriver.Firefox()
     #driver = webdriver.Edge()
     #driver = webdriver.Safari()
-    driver.get("https://www.google.com")
-
-    try: 
-        driver.find_element(By.XPATH, '//*[@id="L2AGLb"]').click()
-        print("google tos passed")
-    except:
-        print("no google tos :)")
 
     driver.get(link_to_your_magister)
 
