@@ -1,6 +1,8 @@
 # MagisterAPI
 A simple API I wrote to interface with magister.
 
+### This is still WIP!
+
 For this API to work you will need some things:
 - Python 3
 - Selenium
