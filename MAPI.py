@@ -31,17 +31,12 @@ time.sleep(1) #decreases the chance of failing
 password = driver.find_element(By.ID, "password")
 password.send_keys(USER_PASSWORD)
 password.submit()
- 
+  
 print(f"succesfully logged into {SCHOOL_LINK} using {str(STUDENT_NUMBER)}, {USER_PASSWORD}")
 
 time.sleep(5)
 
 driver.get(SCHOOL_LINK+"/magister/#/agenda")
-if not driver.current_url == SCHOOL_LINK+"/magister/#/agenda":
-    driver.get(SCHOOL_LINK+"/magister/#/agenda") # make sure it is in the correct agenda
-    print("reloaded agenda")
-else:
-    print("agenda was correct first time")
 
 time.sleep(10) #this needs a lot of time to load all the data
 
