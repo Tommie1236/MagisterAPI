@@ -20,7 +20,7 @@ You can download selenium using `pip install selenium` or `pip3 install selenium
 Selenium requires a driver to interface with the chosen browser. Make sure it’s in your PATH, e. g., place it in `/usr/bin` or `/usr/local/bin` on linux.  
 Links to some of the more popular browser drivers:
 
-* [Chrome](https://sites.google.com/chromium.org/driver/)
+* [Chrome](https://sites.google.com/a/chromium.org/chromedriver/downloads/)
 * [Edge](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
 * [Firefox](https://github.com/mozilla/geckodriver/releases)
 * [Safari](https://webkit.org/blog/6900/webdriver-support-in-safari-10/)
