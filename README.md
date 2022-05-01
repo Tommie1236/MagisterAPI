@@ -1,7 +1,8 @@
+## REMINDER, This is still WIP, Im not finished with it as it is. But if it is usefull for anyone feel free to use it.
+(and mention me or this repo of course)
+
 # MagisterAPI
 A simple API I wrote to interface with magister.
-
-### This is still WIP!
 
 For this API to work you will need some things:
 - Python 3
