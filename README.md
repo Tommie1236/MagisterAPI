@@ -15,7 +15,7 @@ Otherwise go to [this](https://www.python.org/downloads/) site
 
 #### Selenium
 Selenium is a piece of software to automate and interface with browsers.  
-You can download selenium using `pip install selenium` or `pip3 install selenium`.
+You can download selenium using `pip install selenium` or `pip3 install selenium` on linux systems.
 
 #### Drivers
 Selenium requires a driver to interface with the chosen browser. Make sure it’s in your PATH, e. g., place it in `/usr/bin` or `/usr/local/bin` on linux.  
