@@ -1,5 +1,4 @@
-## REMINDER, This is still WIP, Im not finished with it as it is. But if it is usefull for anyone feel free to use it.
-(and mention me or this repo of course)
+## This repository is discontinued! a link to a newer version is at the bottom
 
 # MagisterAPI
 A simple API I wrote to interface with magister.
@@ -33,4 +32,4 @@ For now it can only see the 1st lesson of the 1st day and give you all the lesso
 If you know any way to also access the other lessons and days please leave an issue.  
 Feel free to also make an issue if you need any help.
 
-### I'm working on a complete rewite. Once that is done it will be linked here
+### I'm working on a complete rewite. Once that is done it will be linked [here](github.com/tommie1236/magisterapi2.0)
