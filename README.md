@@ -32,4 +32,4 @@ For now it can only see the 1st lesson of the 1st day and give you all the lesso
 If you know any way to also access the other lessons and days please leave an issue.  
 Feel free to also make an issue if you need any help.
 
-### I'm working on a complete rewite. Once that is done it will be linked [here](github.com/tommie1236/magisterapi2.0)
+### I'm working on a complete rewite. Once that is done it will be linked [here](https://github.com/Tommie1236/MagisterAPI2.0)
